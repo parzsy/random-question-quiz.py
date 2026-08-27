@@ -1,0 +1,33 @@
+print("Welcome to the quiz!")
+score = 0
+city = input("What is the capital of France? A. London B. Paris C. Madrid D. Rome: ").upper()
+
+if city == "B":
+    print("Correct!")
+    score = score+1
+    print(f"{score}/3")
+    planet = input("What is the largest planet in our solar system? A. Earth B. Saturn C. Jupiter D. Neptune: ").upper()
+else:
+    print("Incorrect!")
+    print(f"{score}/3")
+    planet = input("What is the largest planet in our solar system? A. Earth B. Saturn C. Jupiter D. Neptune: ").upper()
+
+if planet == "C":
+    print("Correct!")
+    score = score+1
+    print(f"{score}/3")
+    sides = input("How many sides does a hexagon have? A. 5 B. 6 C. 7 D. 8: ").upper()
+else:
+    print("Incorrect!")
+    print(f"{score}/3")
+    sides = input("How many sides does a hexagon have? A. 5 B. 6 C. 7 D. 8: ").upper()
+if sides == "B":
+    print("Correct!")
+    score = score+1
+    print(f"{score}/3")
+else:
+    print("Incorrect!")
+    print(f"{score}/3")
+
+print("Quiz complete!")
+print(f"Your score is {score}/3!")
